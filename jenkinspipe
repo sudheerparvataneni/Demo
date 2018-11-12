@@ -1,0 +1,20 @@
+pipeline {
+    agent any 
+    stages {
+        stage('Build') { 
+            steps {
+                echo 'Build file from git'
+            }
+        }
+        stage('Test') { 
+            steps {
+                echo 'test rom git'
+            }
+        }
+        stage('Deploy') { 
+            steps {
+                echodeploy from git' 
+            }
+        }
+    }
+}
