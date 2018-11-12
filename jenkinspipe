@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Deploy') { 
             steps {
-                echodeploy from git' 
+                echo 'deploy from git' 
             }
         }
     }
